@@ -30,7 +30,7 @@ const IconLink = ({ label, location }: IconLinkProps): JSX.Element => {
 
 const LeftNavBar = (): JSX.Element => {
     return (
-        <div className='bg-emerald-500 h-screen'>
+        <div className='bg-emerald-500 h-screen z-10'>
             <div className="pt-4">
                 <NavContainer>
                     <IconLink label="Home" location="/" />

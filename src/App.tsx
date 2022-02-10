@@ -1,4 +1,3 @@
-import React from 'react';
 import Home from './components/Home';
 import About from './components/About';
 import LeftNavBar from './components/LeftNavBar';
@@ -14,7 +13,7 @@ function App() {
         <Route path="about" element={<About />} />
       </Routes>
     </div>
-  );
+  )
 }
 
 export default App;

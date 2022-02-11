@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="flex overscroll-none">
+    <div className="flex">
       <LeftNavBar />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -10,6 +10,8 @@ const TimelineDot = tw.div`absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 b
 const Time = tw.time`mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500 p-2`
 const EventHeaderText = tw.h3`text-lg font-semibold text-emerald-500 dark:text-white p-2`
 const EventHeaderDescription = tw.p`mb-4 text-base font-normal text-gray-500 dark:text-gray-400 p-2`
+const EventFooter = tw.div`flex-col flex md:flex-row justify-center md:justify-start items-center text-center p-2 pb-6`
+const Seperator = tw.span`text-6xl text-slate-300 hidden md:block md:mb-2 md:mr-2`
 
 type EventLinkButtonProps = {
     location: string
@@ -42,6 +44,7 @@ export type TimelineItemType = {
     linkLocation?: string
     linkLabel?: string
     iconFilename?: string
+    imageAlt: string
 }
 
 const TimelineItem = ({item}: TimelineItemProps): JSX.Element => {
@@ -51,13 +54,14 @@ const TimelineItem = ({item}: TimelineItemProps): JSX.Element => {
             <Time>{item.date}</Time>
             <EventHeaderText>{item.title} &bull; {item.employer}</EventHeaderText>
             <EventHeaderDescription>{item.description}</EventHeaderDescription>
-            <div className="flex-col flex md:flex-row justify-center md:justify-start items-center  text-center p-2 pb-6">
-                <img className="h-24 mx-auto md:mx-0 pb-4 md:pb-0 md:p-2" src={`/images/${item.iconFilename}`} alt='Vehikl logo'/>
-                <span className="text-6xl text-slate-300 hidden md:block md:mb-2 md:mr-2">&bull;</span>
+            <EventFooter>
+                <img className="h-24 mx-auto md:mx-0 pb-4 md:pb-0 md:p-2" src={`/images/${item.iconFilename}`}
+                     alt={item.imageAlt}/>
+                <Seperator>&bull;</Seperator>
                 {item.linkLocation && item.linkLabel &&
                 <EventLinkButton location={item.linkLocation} label={item.linkLabel}/>
                 }
-            </div>
+            </EventFooter>
         </TimelineListItem>
     )
 }

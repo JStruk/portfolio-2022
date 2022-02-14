@@ -3,7 +3,7 @@ import tw from 'tailwind-styled-components'
 import { Link } from 'react-router-dom'
 import navbarIcons from '../assets/navbarIcons.json'
 
-const LeftNav = tw.div`bg-emerald-500 z-10 pt-4 min-h-screen`
+const LeftNav = tw.div`bg-emerald-400 opacity-90 z-10 pt-4 min-h-screen`
 const NavBarLink = tw.span`text-center text-sm font-semibold text-slate-100 rounded-lg`
 const NavContainer = tw.nav`flex-grow md:block sm:px-4 pb-4 md:pb-0 md:overflow-y-auto`
 const IconLinkContainer = tw.div`sm:px-2 hover:bg-emerald-600 rounded-2xl`

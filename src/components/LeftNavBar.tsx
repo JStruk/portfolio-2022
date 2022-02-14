@@ -5,8 +5,9 @@ import navbarIcons from '../assets/navbarIcons.json'
 
 const LeftNav = tw.div`bg-emerald-400 opacity-90 z-10 pt-4 min-h-screen`
 const NavBarLink = tw.span`text-center text-sm font-semibold text-slate-100 rounded-lg`
-const NavContainer = tw.nav`flex-grow md:block sm:px-4 pb-4 md:pb-0 md:overflow-y-auto`
+const NavContainer = tw.nav`justify-center md:block sm:px-4 pb-4 md:pb-0 md:overflow-y-auto`
 const IconLinkContainer = tw.div`sm:px-2 hover:bg-emerald-600 rounded-2xl`
+const LogoContainer = tw.div`h-16 w-16 flex mx-auto mb-2`
 
 type IconLinkProps = {
     label: string
@@ -35,6 +36,9 @@ const LeftNavBar = (): JSX.Element => {
     return (
         <LeftNav>
             <NavContainer>
+                <LogoContainer>
+                    <img src="/images/logo.png" alt="Justin Struk Logo"/>
+                </LogoContainer>
                 <IconLink label="Home" location="/"/>
                 <IconLink label="About" location="/about"/>
                 <IconLink label="Projects" location="/projects"/>

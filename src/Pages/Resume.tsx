@@ -1,5 +1,5 @@
 import React from "react";
-import Timeline from './Timeline'
+import Timeline from '../components/Timeline'
 import tw from "tailwind-styled-components";
 
 const ResumeContainer = tw.div`flex flex-col justify-center md:px-12 p-4 min-h-screen`

@@ -4,6 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './css/index.css'
 import { BrowserRouter } from 'react-router-dom';
+import 'flowbite';
 
 ReactDOM.render(
   <React.StrictMode>

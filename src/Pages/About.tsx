@@ -68,7 +68,7 @@ const About = (): JSX.Element => {
                         to='/projects'><LinkText>here</LinkText></Link></ProjectsText>
                 </ProjectsTextContainer>
             </AboutContainer>
-            {/*<Particles options={particlesConfig} />*/}
+            <Particles options={particlesConfig} />
         </>
     )
 }

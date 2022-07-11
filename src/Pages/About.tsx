@@ -1,8 +1,8 @@
 import React from 'react'
 import tw from 'tailwind-styled-components'
-import {particlesConfig} from '../config/aboutParticlesConfig'
+import { particlesConfig } from '../config/aboutParticlesConfig'
 import Particles from "react-tsparticles";
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const AboutContainer = tw.div`flex flex-col justify-center md:px-12 p-4 min-h-screen`
 const HeaderTextContainer = tw.div`pb-4`
@@ -17,7 +17,7 @@ type LinkProps = {
     location: string
     label: string
 }
-const OutLink = ({location, label}: LinkProps): JSX.Element => {
+const OutLink = ({ location, label }: LinkProps): JSX.Element => {
     return (
         <LinkText>
             <a href={location} target="_blank" rel="noreferrer">
@@ -39,13 +39,13 @@ const About = (): JSX.Element => {
                     fitness, gaming, and cars.</ParagraphWrapper>
                 <ParagraphWrapper>I'm currently a <HighlightedText>Software Developer</HighlightedText> at an
                     awesome
-                    company: <OutLink location="https://www.vehikl.com" label="Vehikl."/>
+                    company: <OutLink location="https://www.vehikl.com" label="Vehikl." />
                     We are a software consultancy company with a focus on growth and caring. This leads to constant
                     opportunities to learn
                     and practice new technologies in my day-to-day, while also understanding, improving,
                     and advancing codebases of all sizes.</ParagraphWrapper>
                 <ParagraphWrapper>If you want to check out how we work at Vehikl, we host public <OutLink
-                    location="https://growth.vehikl.com" label="Growth Sessions"/> daily
+                    location="https://growth.vehikl.com" label="Growth Sessions" /> daily
                     that anyone can join!</ParagraphWrapper>
                 <ParagraphWrapper>Besides work, I enjoy many sports such as hockey and golf. I do my best to stay in
                     shape so you'll see me at the gym ~4 times a week (well, maybe less...). I also like to consider
@@ -54,7 +54,7 @@ const About = (): JSX.Element => {
                     racing games.</ParagraphWrapper>
                 <ParagraphWrapper>I like to think I have a pretty cool car. My 2014 Genesis Coupe has been my baby
                     for a few years now, and if you're into cars you can check it out on my ig, <OutLink
-                        location="https://www.instagram.com/bk2.juddy/" label="@bk2.juddy"/>
+                        location="https://www.instagram.com/bk2.juddy/" label="@bk2.juddy" />
                 </ParagraphWrapper>
 
                 <ParagraphWrapper>

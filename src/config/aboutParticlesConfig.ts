@@ -1,4 +1,4 @@
-import {ISourceOptions} from "tsparticles";
+import { ISourceOptions } from "tsparticles";
 
 export const particlesConfig: ISourceOptions = {
     fullScreen: {
@@ -82,10 +82,6 @@ export const particlesConfig: ISourceOptions = {
     interactivity: {
         detectsOn: "window",
         events: {
-            onhover: {
-                enable: true,
-                mode: "trail"
-            },
             onclick: {
                 enable: true,
                 mode: "push"
@@ -94,29 +90,29 @@ export const particlesConfig: ISourceOptions = {
         },
         modes: {
             grab: {
-                distance: 400,
+                distance: 600,
                 line_linked: {
                     opacity: 1
                 }
             },
             bubble: {
                 distance: 400,
-                size: 40,
+                size: 20,
                 duration: 2,
-                opacity: 0.8,
+                opacity: 0.5,
             },
             repulse: {
                 distance: 200
             },
             push: {
-                particles_nb: 4
+                particles_nb: 10
             },
             remove: {
                 particles_nb: 2
             },
             trail: {
                 delay: 0.005,
-                quantity: 5,
+                quantity: 2,
                 pauseOnStop: true
             }
         }

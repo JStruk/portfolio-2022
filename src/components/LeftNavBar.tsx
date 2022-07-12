@@ -14,17 +14,17 @@ type IconLinkProps = {
     location: string
 }
 
-const IconLink = ({label, location}: IconLinkProps): JSX.Element => {
+const IconLink = ({ label, location }: IconLinkProps): JSX.Element => {
     type NavBarIconsEntry = { path: string, viewBox: string }
 
     // @ts-ignore
-    const {path, viewBox}: NavBarIconsEntry = navbarIcons[label]
+    const { path, viewBox }: NavBarIconsEntry = navbarIcons[label]
 
     return (
         <IconLinkContainer>
             <Link to={location} className="flex flex-col justify-center items-center py-4">
                 <svg className='h-6 w-6' xmlns="http://www.w3.org/2000/svg" viewBox={`${viewBox}`}>
-                    <path d={`${path}`}/>
+                    <path d={`${path}`} />
                 </svg>
                 <NavBarLink>{label}</NavBarLink>
             </Link>
@@ -37,13 +37,13 @@ const LeftNavBar = (): JSX.Element => {
         <LeftNav>
             <NavContainer>
                 <LogoContainer>
-                    <img src="/images/logo.png" alt="Justin Struk Logo"/>
+                    <img src="/images/logo.png" alt="Justin Struk Logo" />
                 </LogoContainer>
-                <IconLink label="Home" location="/"/>
-                <IconLink label="About" location="/about"/>
-                <IconLink label="Projects" location="/projects"/>
-                <IconLink label="Resume" location="/resume"/>
-                <IconLink label="Contact" location="/contact"/>
+                <IconLink label="Home" location="/" />
+                <IconLink label="About" location="/about" />
+                <IconLink label="Projects" location="/projects" />
+                <IconLink label="Resume" location="/resume" />
+                <IconLink label="Contact" location="/contact" />
             </NavContainer>
         </LeftNav>
     )

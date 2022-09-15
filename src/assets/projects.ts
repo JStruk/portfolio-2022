@@ -45,5 +45,19 @@ export const projects: Array<Project> = [
             "Compute Engine",
             "Firebase firestore"
         ]
+    },
+    {
+        "name": "MobTime IntelliJ Plugin",
+        "description": "Plugin for IntelliJ-based IDEs that enables the use of Mobti.me directly inside the IDE as a tool window for structured mob programming.",
+        "link": "https://plugins.jetbrains.com/plugin/16137-mobtime",
+        "github": "https://github.com/mobtimeapp/mobtime-intellij-plugin",
+        "imgName": "mobtime.png",
+        "imgAlt": "MobTime icon",
+        "tags": [
+            "IntelliJ Plugin",
+            "Mobtimeapp",
+            "Java",
+            "gradle",
+        ]
     }
 ]

@@ -13,7 +13,7 @@ const ProjectDisplay = ({ project }: ProjectDisplayProps): JSX.Element => {
                 <div className="divide-gray-300/50">
                     <div className="space-y-6 pt-8 pb-8 text-base leading-7 text-gray-600">
                         <hr />
-                        <img src={`/images/${project.imgName}`} alt={project.imgAlt} />
+                        <img src={`/images/${project.imgName}`} alt={project.imgAlt} className="mx-auto" />
                         <p>{project.description}</p>
                     </div>
                     <hr className='p-4' />
